@@ -1,1 +1,200 @@
 /* Here Case page Styles */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  background: url("/assets/img/ura/contacts.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-color: #000;
+  padding: 100px 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.main__title {
+  font-size: 48px;
+  font-family: "Cormorant Garamond", serif;
+  color: #DAAB2D;
+  text-align: center;
+}
+
+.main__subtitle {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  color: #B8B8B8;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.main__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 75px;
+  padding-bottom: 52px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__content .main__content-img {
+  width: 470px;
+  height: 370px;
+  padding-right: 29px;
+}
+
+.main__content .main__content-description {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: #B8B8B8;
+  padding-bottom: 30px;
+}
+
+.main__content .main__content-description-bold {
+  font-size: 24px;
+}
+
+.main__content-socialitems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__content-socialitem {
+  outline: none;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+.figma::after {
+  content: url("/assets/img/ura/bx_bxl-figma.svg");
+}
+
+.ai::after {
+  content: url("/assets/img/ura/simple-icons_adobeillustrator.svg");
+}
+
+.slider__wrapper {
+  overflow: hidden;
+}
+
+.slider__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3333333333%;
+          flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+  height: 370px;
+  width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 7rem;
+}
+
+.slider__item:nth-child(1) {
+  background-color: #f44336;
+}
+
+.slider__item:nth-child(2) {
+  background-color: #9c27b0;
+}
+
+.slider__item:nth-child(3) {
+  background-color: #3f51b5;
+}
+
+.slider__item:nth-child(4) {
+  background-color: #03a9f4;
+}
+
+.slider__item:nth-child(5) {
+  background-color: #4caf50;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 375px;
+    position: relative;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+  .main__title {
+    font-size: 30px;
+    padding: 10px;
+  }
+  .main__subtitle {
+    font-size: 18px;
+  }
+  .main__content .main__content-img {
+    width: 343px;
+    height: 270px;
+    margin-bottom: 40px;
+    padding-right: 0;
+  }
+  .main__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 10px 45px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__content .main__content-description-bold {
+    color: white;
+    font-size: 14px;
+  }
+  .main__content .main__content-description {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 6px;
+  }
+  .slider__control {
+    display: none;
+  }
+  .slider__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 74%;
+            flex: 0 0 74%;
+    width: 56%;
+    max-height: 242px;
+    margin-right: 100px;
+  }
+  .main__content-socialitems {
+    padding-left: 6px;
+  }
+}
+/*# sourceMappingURL=case.css.map */

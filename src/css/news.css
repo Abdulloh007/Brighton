@@ -1,1 +1,408 @@
 /* Here News page Styles */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Raleway:wght@300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Banner Section */
+section.b-h_banner {
+    padding: 300px 0 0;
+    background-image: url(/assets/img/home/smoke.png),
+                        url('/assets/img/glav.png');
+    background-size: 70%, 100%;
+    background-position: bottom, top;
+}
+.b-h_img {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+.b-h_img img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 750px;
+}
+.b-b_heading {
+    font-family: Cormorant Garamond;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    color: var(--yellow);
+}
+.b_b-desk {
+    font-family: Cormorant Garamond;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #B8B8B8;
+}
+.b_b-desk span {
+    color: var(--yellow)
+}
+.b-b_links {
+    row-gap: 15px;
+}
+.b-b_links a {
+    width: 100%;
+    text-align: center;
+}
+/* About Section */
+section.b-about {
+    background-image: url(/assets/img/home/arms.png), url(/assets/img/glav.png);
+    background-blend-mode: normal;
+    background-size: 100%, 100%;
+    background-position: center calc(100% + 30px), center;
+    padding: 200px 0 400px;
+}
+.b-about .b-b_heading, .b-why .b-b_heading {
+    text-align: center;
+}
+
+.line{
+  margin-top: 0.25px;
+  margin-bottom: 0px;
+}
+.main{
+  background: url(/assets/img/glav.png) center/cover no-repeat;
+  height: 100%;
+  padding-top: 0px;
+  padding-bottom: 150px;
+}
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+.mess{
+  padding-top: 80px;
+  text-align: center;
+}
+.mess h1{
+  color: rgba(218, 171, 45, 1);
+  font-family: 'Cormorant' Garamond;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 117.1%;
+  padding-bottom: 15px;
+}
+.mess p{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #B8B8B8;
+}
+.items{
+  padding-top: 70px;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 2em;
+}
+.items .text{
+  display: table-footer-group;
+}
+.items .text .top{
+  margin-top: 30px;
+}
+.items .lap{
+  display: table-header-group;
+}
+.text p{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #B8B8B8;
+}
+
+
+.supporting{
+  width: 100%;
+  height: auto;
+  background: url(/assets/img/glav.png) center/cover no-repeat;
+  padding-bottom: 100px;
+}
+.our-projects{
+  width: 100%;
+  height: 100%;
+  background: url(/assets/img/glav.png) center/cover no-repeat;
+  padding-bottom: 100px;
+}
+.supporting .card-columns .card
+{
+  border: 3px solid #DAAB2D;
+  background-color: unset;
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.blocks{
+  padding-top: 76px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap:1em;
+}
+
+.block{
+  text-align: center;
+  width: 270px;
+  height: 300px;
+}
+
+.block h1{
+  font-family: Cormorant Garamond;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FDFDFD;
+  height: 80px;
+  margin-top: 25px;
+}
+
+.block p{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #B8B8B8;
+  text-align: left;
+  width: 245px;
+  margin: auto;
+}
+
+.out-projects .card-columns .owl-item
+{
+  width: 100%;
+}
+
+
+.blockk{
+  position: relative;
+  padding-top: 76px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:1em;
+}
+
+.bloo{
+  width: 370px;
+  height: 400px;
+}
+.blo{
+  width: 100%;
+  height: 370px;
+  background: #C4C4C4;
+}
+
+.bloo h1{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FDFDFD;
+  padding-top: 20px;
+}
+
+.bts{
+  display: flex;
+  padding-top: 50px;
+  background: none;
+  text-decoration: none;
+  padding-left: 90%;
+}
+
+.show{
+  color: rgba(184, 184, 184, 1);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  width: 269px;
+  height: 60px;
+  border: 3px solid #DAAB2D;
+  box-sizing: border-box;
+  background-color: rgb(15, 15, 15, .001);
+  display: block;
+  margin: auto;
+  margin-top: 130px;
+}
+
+.owl-carousel{
+  padding-top: 25px;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+.it{
+  width: 350px;
+  height: 400px;
+  background-color: rgba(196, 196, 196, .001);
+}
+
+.item{
+  width: 350px;
+  height: 350px;
+  background-color:rgba(196, 196, 196, 1);
+}
+
+.it h1{
+  padding-top: 20px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FDFDFD;
+}
+
+
+.news{
+  width: 100%;
+  height: auto;
+  background: url(/assets/img/glav.png) center/cover no-repeat;
+  padding-bottom: 100px;
+}
+.news  .card-columns{
+  padding-top: 60px;
+}
+.news .card-columns .card
+{
+  background-color: unset;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  height: auto;
+  margin-top: 50px;
+}
+.supportingg {
+    width: 100%;
+    height: 100%;
+    background: url(/assets/img/7th\ block.png) center/cover no-repeat;
+}
+.allnews{
+  width: 100%;
+  background: url(/assets/img/glav.png) center/cover no-repeat;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.allnews .card-columns .card
+{
+  background-color: unset;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  height: auto;
+  margin-top: 50px;
+}
+@media (min-width: 576px) {
+    .supporting .card-columns {
+        column-count: 2;
+    }
+    .our-projects .card-columns {
+        column-count: 2;
+    }
+    .news .card-columns {
+        column-count: 2;
+    }
+    .supportingg{
+      padding: 200px;
+    }
+    .allnews .card-columns{
+      column-count: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .supporting .card-columns {
+        column-count: 2;
+    }
+    .our-projects .card-columns {
+        column-count: 2;
+    }
+    .news .card-columns {
+        column-count: 2;
+    }
+    .supportingg{
+      padding: 200px;
+    }
+    .allnews .card-columns{
+      column-count: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .main .items {
+      display: grid;
+    }
+    .main .items .text {
+      display: unset;
+    }
+    .main .items .text .top {
+      margin-top: 0px;
+    }
+    .main .items .lap {
+      display: unset;
+    }
+    .supporting .card-columns {
+        column-count: 3;
+    }
+    .our-projects .card-columns {
+        column-count: 3;
+    }
+    .news .card-columns {
+        column-count: 4;
+    }
+    .supportingg{
+      padding: 200px;
+    }
+    .allnews .card-columns{
+      column-count: 4;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main .items {
+      display: grid;
+    }
+    .main .items .text {
+      display: unset;
+    }
+    .main .items .text .top {
+      margin-top: 0px;
+    }
+    .main .items .lap {
+      display: unset;
+    }
+    .supporting .card-columns {
+        column-count: 4;
+    }
+    .supporting .card-columns .card {
+    width: 270px;
+    }
+    .our-projects .card-columns {
+        column-count: 4;
+    }
+    .news .card-columns {
+        column-count: 4;
+    }
+    .supportingg{
+      padding: 200px;
+    }
+    .allnews .card-columns{
+      column-count: 4;
+    }
+}

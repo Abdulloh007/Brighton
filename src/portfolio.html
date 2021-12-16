@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>Brighton - Portfolio</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="/style.css">
         <link rel="stylesheet" href="./css/portfolio.css">
-        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
     </head>
     <body>
         <!-- Header -->
@@ -14,10 +14,83 @@
 
         <!-- Main -->
         <main class="b-main">
-            <section class="b-about">
+            <section class="portfolio__section">
                 <div class="container">
-                    <div class="row">
-                        <!-- ****** -->
+                    <p class="portfolio__title">
+                        Портфолио
+                    </p>
+                    <div class="portfolio__nav-mobile">
+                        <button class="dropbtn">Все проекты</button>
+                        <div class="portfolio__nav">
+                            <button class="portfolio__nav-item" style="color: white;" data-filter="all">Все</button>
+                            <button class="portfolio__nav-item" data-filter="websites">Веб-сайты</button>
+                            <button class="portfolio__nav-item" data-filter="winsoftware">ПО для Windows</button>
+                            <button class="portfolio__nav-item" data-filter="aiosapps">Приложения для Android/iOS</button>
+                            <button class="portfolio__nav-item" data-filter="design">Дизайн</button>
+                            <button class="portfolio__nav-item" data-filter="artint">Искусственный интеллект</button>
+                        </div>
+                    </div>
+                    <div class="portfolio__nav">
+                        <button class="portfolio__nav-item" style="color: white;" data-filter="all">Все</button>
+                        <button class="portfolio__nav-item" data-filter="websites">Веб-сайты</button>
+                        <button class="portfolio__nav-item" data-filter="winsoftware">ПО для Windows</button>
+                        <button class="portfolio__nav-item" data-filter="aiosapps">Приложения для Android/iOS</button>
+                        <button class="portfolio__nav-item" data-filter="design">Дизайн</button>
+                        <button class="portfolio__nav-item" data-filter="artint">Искусственный интеллект</button>
+                    </div>
+                    <div class="portfolio__cards">
+                        <div class="portfolio__cards-card websites">
+                            <img src="http://placehold.it/370x370" alt="" class="portfolio-card-img">
+                            <p class="portfolio-card-subtitle">Дизайн сайта SK.Webstudio</p>
+                        </div>
+                        <div class="portfolio__cards-card design">
+                            <img src="http://placehold.it/370x370" alt="" class="portfolio-card-img">
+                            <p class="portfolio-card-subtitle">Дизайн приложения HopeLife</p>
+                        </div>
+                        <div class="portfolio__cards-card winsoftware">
+                            <img src="http://placehold.it/370x370" alt="" class="portfolio-card-img">
+                            <p class="portfolio-card-subtitle">Дизайн лендинга для Wuben</p>
+                        </div>
+                        <div class="portfolio__cards-card artint">
+                            <img src="http://placehold.it/370x370" alt="" class="portfolio-card-img">
+                            <p class="portfolio-card-subtitle">Дизайн сайта SK.Webstudio</p>
+                        </div>
+                        <div class="portfolio__cards-card websites">
+                            <img src="http://placehold.it/370x370" alt="" class="portfolio-card-img">
+                            <p class="portfolio-card-subtitle">Дизайн приложения HopeLife</p>
+                        </div>
+                        <div class="portfolio__cards-card design">
+                            <img src="http://placehold.it/370x370" alt="" class="portfolio-card-img">
+                            <p class="portfolio-card-subtitle">Дизайн лендинга для Wuben</p>
+                        </div>
+                        <div class="portfolio__cards-card design">
+                            <img src="http://placehold.it/370x370" alt="" class="portfolio-card-img">
+                            <p class="portfolio-card-subtitle">Дизайн сайта SK.Webstudio</p>
+                        </div>
+                        <div class="portfolio__cards-card aiosapps">
+                            <img src="http://placehold.it/370x370" alt="" class="portfolio-card-img">
+                            <p class="portfolio-card-subtitle">Дизайн приложения HopeLife</p>
+                        </div>
+                        <div class="portfolio__cards-card design">
+                            <img src="http://placehold.it/370x370" alt="" class="portfolio-card-img">
+                            <p class="portfolio-card-subtitle">Дизайн лендинга для Wuben</p>
+                        </div>
+                        <div class="portfolio__cards-card aiosapps">
+                            <img src="http://placehold.it/370x370" alt="" class="portfolio-card-img">
+                            <p class="portfolio-card-subtitle">Дизайн сайта SK.Webstudio</p>
+                        </div>
+                        <div class="portfolio__cards-card design">
+                            <img src="http://placehold.it/370x370" alt="" class="portfolio-card-img">
+                            <p class="portfolio-card-subtitle">Дизайн приложения HopeLife</p>
+                        </div>
+                        <div class="portfolio__cards-card aiosapps">
+                            <img src="http://placehold.it/370x370" alt="" class="portfolio-card-img">
+                            <p class="portfolio-card-subtitle">Дизайн лендинга для Wuben</p>
+                        </div>
+                    </div>
+                    <div class="portfolio__buttons">
+                        <a class="portfolio__button-unloaded">Показать ещё</a>
+                        <a class="portfolio__button-loaded">Скрыть</a>
                     </div>
                 </div>
             </section>
@@ -26,6 +99,7 @@
         <!-- Footer -->
         <footer id="footer"></footer>
 
-        <script type="text/javascript" src="../glob.js"></script>
+        <script src="./js/portfolio_filter.js"></script>
+        <script type="text/javascript" src="/glob.js"></script>
     </body>
 </html>

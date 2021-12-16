@@ -1,1 +1,654 @@
-/* Here Contacts page Styles */
+:root {
+  --show: url('/assets/img/ura/Vector.svg');
+  --hide: url('/assets/img/ura/Vector1.svg');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+section{
+    background-image: none;
+    padding: 0
+}
+.contacts__section {
+  background: url("/assets/img/ura/contacts.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-color: #000;
+  padding: 100px 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 375px;
+    position: relative;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.contacts__title {
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 72px;
+  font-weight: 500;
+  color: #DAAB2D;
+}
+
+.contacts__card {
+  border: 3px solid #DAAB2D;
+  height: 615px;
+  margin: 75px 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contacts__card-info {
+  border-right: 3px solid #DAAB2D;
+  width: 400px;
+  padding: 50px 40px;
+}
+
+.contacts__card-info .card-info-title {
+  font-size: 30px;
+  color: #FDFDFD;
+}
+
+.contacts__card-info .card-info-description {
+  color: #B8B8B8;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "Raleway", sans-serif;
+  padding-top: 20px;
+}
+
+.contacts__card-info .card-info-numbers {
+  padding-top: 60px;
+  font-family: "Raleway", sans-serif;
+  color: #B8B8B8;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.contacts__card-info .card-info-numbers .card-info-num {
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__card-info .card-info-numbers .ua::before, .contacts__card-info .card-info-numbers .pl::before {
+  padding-right: 10px;
+  content: url("/assets/img/ura/phone.svg");
+}
+
+.contacts__card-info .card-info-numbers .ua::after {
+  content: "ua";
+  padding-left: 10px;
+  color: #DAAB2D;
+  font-size: 30px;
+}
+
+.contacts__card-info .card-info-numbers .pl::after {
+  content: "pl";
+  padding-left: 10px;
+  color: #DAAB2D;
+  font-size: 30px;
+}
+
+.contacts__card-info .card-info-numbers .card-info-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__card-info .card-info-numbers .card-info-email::before {
+  content: url("/assets/img/ura/email.svg");
+  padding-right: 10px;
+}
+
+.contacts__card-info .card-info-social {
+  padding-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__card-info .card-info-social .card-info-social-link {
+  margin-right: 30px;
+}
+
+.contacts__card-info .ig::after {
+  content: url("/assets/img/ura/icon_instagram.svg");
+}
+
+.contacts__card-info .fb::after {
+  content: url("/assets/img/ura/iconoir_facebook-squared.svg");
+}
+
+.contacts__card-info .in::after {
+  content: url("/assets/img/ura/iconoir_linkedin.svg");
+}
+
+.contacts__card-info .tg::after {
+  content: url("/assets/img/ura/iconoir_telegram-circled.svg");
+}
+
+.contacts__card-sendus {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #EDEDED;
+  width: calc(100% - 400px);
+  padding: 50px 100px;
+}
+
+.contacts__card-sendus .card-sendus-title {
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #262626;
+}
+
+.contacts__card-sendus .card-sendus-contacts {
+  padding-top: 25px;
+}
+
+.contacts__card-sendus .card-sendus-contacts .minds__field-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+
+.contacts__card-sendus .card-sendus-contacts .minds__field {
+  width: 100%;
+  height: 120px;
+  margin-top: 5px;
+  resize: none;
+  background-color: transparent;
+  border: 2px solid #DAAB2D;
+  outline: none;
+  font-size: "Raleway", sans-serif;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacts__card-sendus .card-sendus-contacts .card-sendus-button {
+  padding: 20px 44px;
+  background-color: #DAAB2D;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 35px auto;
+}
+
+.contacts__card-sendus .card__form-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.contacts__card-sendus .card__form-contacts input {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #DAAB2D;
+  background-color: transparent;
+  outline: none;
+  padding: 0 0 10px 0;
+  text-overflow: ellipsis;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contacts__card-sendus .card__form-contacts input:last-child {
+  margin-bottom: 60px;
+}
+
+.contacts__card-sendus .card__form-contacts input:focus {
+  border-bottom: 2px solid #f0b20a;
+  color: #262626;
+}
+
+.contacts__card-sendus .card__form-contacts input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.contacts__card-sendus .card__form-contacts input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.contacts__card-sendus .card__form-contacts input:focus::-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.contacts__card-sendus .card__form-contacts input:focus::placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.brif .brif__title {
+  font-size: 48px;
+  color: #DAAB2D;
+  text-align: center;
+}
+
+.brif .brif__subtitle {
+  width: 509px;
+  margin: 0 auto;
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  color: #B8B8B8;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.brif .brif__buttons {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.brif .brif__button-show {
+  padding: 10px 50px;
+  border: 2px solid #DAAB2D;
+  background-color: transparent;
+  font-size: 24px;
+  color: #B8B8B8;
+  text-decoration: none;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.brif .brif__button-show:hover {
+  background-color: #DAAB2D;
+  color: white;
+}
+
+.brif__content-right-items {
+  color: #DAAB2D;
+  font-size: 48px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.brif__content-right-items .brif__content-right-item {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.brif__content-right-items .brif__content-right-item:focus {
+  border: 2px solid #222;
+  outline: 0;
+}
+
+.brif__content-right-items .brif__content-right-item:after {
+  content: var(--show);
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.brif__content-right-items .brif__content-right-item.hide:after {
+  content: var(--hide);
+  padding-bottom: 30px;
+}
+
+.brif__content-right-items .brif__content-right-item:hover {
+  cursor: pointer;
+}
+
+.brif__button {
+  display: block;
+  margin: 0 auto;
+}
+
+.brif__button .brif__button-send {
+  background: #DAAB2D;
+  padding: 20px 45px;
+  text-align: center;
+  border: 3px solid #DAAB2D;
+  color: #262626;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+.active {
+  color: white;
+}
+
+.brif__content-right-form-contacts {
+  -webkit-transition: max-height 0.2s;
+  transition: max-height 0.2s;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.brif__content-right-form-contacts[aria-hidden="true"] {
+  max-height: 0;
+}
+
+.brif__content-right-form-contacts[aria-hidden="false"] {
+  max-height: var(--containerHeight, 1000px);
+}
+
+.brif__content-right-form-contacts .brif__content-subtitle {
+  font-size: 22px;
+  color: #B8B8B8;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 20px;
+}
+
+.brif__content-right-form-contacts .brif__content-subtitle span {
+  color: red;
+}
+
+.brif__content-right-form-contacts input {
+  font-size: 24px;
+  background-color: #B8B8B8;
+  outline: none;
+  padding: 5px;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.brif__content-right-form-contacts .form_radio_btns {
+  margin-bottom: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+.form_radio_btn {
+  display: inline-block;
+  margin-right: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  border: 2px solid #DAAB2D;
+  text-align: center;
+}
+
+.form_radio_btn:nth-child(-n+4) {
+  margin-bottom: 10px;
+}
+
+.form_radio_btn:hover {
+  background-color: #DAAB2d;
+  color: white;
+}
+
+.form_radio_btn input[type=radio] {
+  display: none;
+}
+
+.form_radio_btn label {
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 20px 30px;
+  color: white;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+  color: #DAAB2D;
+}
+
+.form_radio_btn input[type=radio]:checked + label:hover {
+  color: white;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+  color: white;
+}
+
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled + label {
+  background: #efefef;
+  color: #666;
+}
+
+.tab-head-mobile {
+  display: none;
+}
+
+.brif__subtitle-u {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .contacts__title {
+    font-size: 30px;
+  }
+  .contacts__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 40px 10px 80px 10px;
+    height: auto;
+  }
+  .contacts__card-info .card-info-title {
+    font-size: 24px;
+  }
+  .contacts__card-info .card-info-description {
+    font-size: 14px;
+    text-align: left;
+  }
+  .contacts__card-info .card-info-numbers {
+    font-size: 14px;
+  }
+  .contacts__card-info .card-info-numbers .ua::after {
+    font-size: 20px;
+  }
+  .contacts__card-info .card-info-numbers .pl::after {
+    font-size: 20px;
+  }
+  .contacts__card-info {
+    text-align: center;
+    border-right: none;
+    width: auto;
+  }
+  .contacts__card-info .card-info-social .card-info-social-link {
+    margin-right: 0;
+  }
+  .contacts__card-info .card-info-social {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 59px;
+  }
+  .contacts__card-info .in::after {
+    content: url(/mobile_content/iconoir_linkedin.svg);
+  }
+  .contacts__card-info .tg::after {
+    content: url(/mobile_content/iconoir_telegram-circled.svg);
+  }
+  .contacts__card-info .fb::after {
+    content: url(/mobile_content/iconoir_facebook-squared.svg);
+  }
+  .contacts__card-info .ig::after {
+    content: url(/mobile_content/Group.svg);
+  }
+  .contacts__card-info .card-info-numbers .card-info-num, .contacts__card-info .card-info-numbers .card-info-email {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts__card-sendus {
+    width: auto;
+    padding: 40px 30px 60px 30px;
+  }
+  .contacts__card-sendus .card-sendus-title {
+    font-size: 24px;
+  }
+  .contacts__card-sendus .card-sendus-contacts .minds__field-title {
+    font-size: 14px;
+  }
+  .contacts__card-sendus .card__form-contacts input {
+    font-size: 14px;
+  }
+  .contacts__card-sendus .card-sendus-contacts .card-sendus-button {
+    font-size: 14px;
+  }
+  .brif .brif__title {
+    font-size: 30px;
+  }
+  .brif .brif__subtitle {
+    font-size: 14px;
+    padding: 0 10px;
+    width: auto;
+  }
+  .tab-head {
+    display: none;
+  }
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 10px 60px;
+    border: 2px solid #DAAB2D;
+    width: 189px;
+  }
+  .tab-head-mobile {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border: 2px solid #DAAB2D;
+    width: auto;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content .tab-label {
+    display: inline;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .tab-head-mobile:hover .dropdown-content {
+    display: block;
+    width: 189px;
+    position: static;
+    margin-top: -1px;
+  }
+  .brif__content-right-items {
+    font-size: 24px;
+  }
+  .brif__content-right-items .brif__content-right-item:after {
+    position: static;
+  }
+  .brif__content-right-form-contacts .brif__content-subtitle {
+    font-size: 14px;
+  }
+  .form_radio_btn {
+    margin-right: 0;
+  }
+  .form_radio_btn:nth-child(-n+8) {
+    margin-bottom: 10px;
+  }
+  .form_radio_btn:nth-child(odd) {
+    margin-right: 5px;
+  }
+  .brif__content-right-form-contacts .form_radio_btns {
+    -ms-grid-columns: 170px 170px;
+        grid-template-columns: 170px 170px;
+  }
+  .form_radio_btn label {
+    font-size: 14px;
+  }
+  .brif__subtitle-u {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 10px;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    color: #B8B8B8;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .brif__content-right-items .brif__content-right-item::after {
+    content: url("/mobile_content/Vectorplus.svg");
+  }
+  .brif__content-right-items .brif__content-right-item.hide:after {
+    content: url("/mobile_content/Vectorminus.svg");
+  }
+}
