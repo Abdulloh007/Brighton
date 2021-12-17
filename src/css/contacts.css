@@ -1,6 +1,6 @@
 :root {
-  --show: url('/assets/img/ura/Vector.svg');
-  --hide: url('/assets/img/ura/Vector1.svg');
+  --show: url('../../assets/img/ura/Vector.svg');
+  --hide: url('../../assets/img/ura/Vector1.svg');
 }
 
 * {
@@ -14,7 +14,7 @@ section{
     padding: 0
 }
 .contacts__section {
-  background: url("/assets/img/ura/contacts.png") no-repeat;
+  background: url("../../assets/img/ura/contacts.png") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-color: #000;
@@ -95,7 +95,7 @@ section{
 
 .contacts__card-info .card-info-numbers .ua::before, .contacts__card-info .card-info-numbers .pl::before {
   padding-right: 10px;
-  content: url("/assets/img/ura/phone.svg");
+  content: url("../../assets/img/ura/phone.svg");
 }
 
 .contacts__card-info .card-info-numbers .ua::after {
@@ -122,7 +122,7 @@ section{
 }
 
 .contacts__card-info .card-info-numbers .card-info-email::before {
-  content: url("/assets/img/ura/email.svg");
+  content: url("../../assets/img/ura/email.svg");
   padding-right: 10px;
 }
 
@@ -138,19 +138,19 @@ section{
 }
 
 .contacts__card-info .ig::after {
-  content: url("/assets/img/ura/icon_instagram.svg");
+  content: url("../../assets/img/ura/icon_instagram.svg");
 }
 
 .contacts__card-info .fb::after {
-  content: url("/assets/img/ura/iconoir_facebook-squared.svg");
+  content: url("../../assets/img/ura/iconoir_facebook-squared.svg");
 }
 
 .contacts__card-info .in::after {
-  content: url("/assets/img/ura/iconoir_linkedin.svg");
+  content: url("../../assets/img/ura/iconoir_linkedin.svg");
 }
 
 .contacts__card-info .tg::after {
-  content: url("/assets/img/ura/iconoir_telegram-circled.svg");
+  content: url("../../assets/img/ura/iconoir_telegram-circled.svg");
 }
 
 .contacts__card-sendus {
@@ -525,16 +525,16 @@ section{
     padding-top: 59px;
   }
   .contacts__card-info .in::after {
-    content: url(/mobile_content/iconoir_linkedin.svg);
+    content: url(../../assets/img/ura/iconoir_linkedin.svg);
   }
   .contacts__card-info .tg::after {
-    content: url(/mobile_content/iconoir_telegram-circled.svg);
+    content: url(../../assets/img/ura/iconoir_telegram-circled.svg);
   }
   .contacts__card-info .fb::after {
-    content: url(/mobile_content/iconoir_facebook-squared.svg);
+    content: url(../../assets/img/ura/iconoir_facebook-squared.svg);
   }
   .contacts__card-info .ig::after {
-    content: url(/mobile_content/Group.svg);
+    content: url(../../assets/img/ura/Group.svg);
   }
   .contacts__card-info .card-info-numbers .card-info-num, .contacts__card-info .card-info-numbers .card-info-email {
     -webkit-box-pack: center;
@@ -646,9 +646,9 @@ section{
     margin-bottom: 40px;
   }
   .brif__content-right-items .brif__content-right-item::after {
-    content: url("/mobile_content/Vectorplus.svg");
+    content: url("../../assets/img/ura/Vectorplus.svg");
   }
   .brif__content-right-items .brif__content-right-item.hide:after {
-    content: url("/mobile_content/Vectorminus.svg");
+    content: url("../../assets/img/ura/Vectorminus.svg");
   }
 }

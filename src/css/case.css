@@ -14,7 +14,7 @@ img {
 }
 
 .main {
-  background: url("/assets/img/ura/contacts.png") no-repeat;
+  background: url("../../assets/img/ura/contacts.png") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-color: #000;
@@ -92,11 +92,11 @@ img {
 }
 
 .figma::after {
-  content: url("/assets/img/ura/bx_bxl-figma.svg");
+  content: url("../../assets/img/ura/bx_bxl-figma.svg");
 }
 
 .ai::after {
-  content: url("/assets/img/ura/simple-icons_adobeillustrator.svg");
+  content: url("../../assets/img/ura/simple-icons_adobeillustrator.svg");
 }
 
 .slider__wrapper {

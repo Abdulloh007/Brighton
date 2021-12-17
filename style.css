@@ -22,7 +22,7 @@ body{
 }
 section {
     padding: 100px 0;
-    background:  url('/assets/img/glav.png') center/cover no-repeat;
+    background:  url('./assets/img/glav.png') center/cover no-repeat;
 }
 ul{
     margin: 0;
@@ -161,7 +161,7 @@ input {
 /* Header Styles */
 header#b-header {
     padding-bottom: 110px;
-    background: url(/assets/img/glav.png) bottom/cover no-repeat;
+    background: url(./assets/img/glav.png) bottom/cover no-repeat;
 }
 nav {
     position: absolute;
@@ -386,6 +386,7 @@ ul.b-menu li a {
 }
 /* Footer Styles */
 footer#b-footer {
+    margin: 0;
     padding: 50px 0 60px;
     background-color: #100F1B;
 }

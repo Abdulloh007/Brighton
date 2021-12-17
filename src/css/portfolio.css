@@ -23,9 +23,9 @@
 }
 
 .portfolio__section {
-  background: url("/assets/img/ura/portfolio.png") no-repeat;
+  background: url("../../assets/img/ura/portfolio.png") no-repeat;
     -webkit-background-size: 100%;
-    background-size: 100%;
+    background-size: cover;
   background-color: #000;
   padding: 100px 0;
 }

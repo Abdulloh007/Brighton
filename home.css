@@ -10,8 +10,8 @@
 /* Banner Section */
 section.b-h_banner {
     padding: 300px 0 0;
-    background-image: url(/assets/img/home/smoke.png),
-                        url('/assets/img/glav.png');
+    background-image: url(./assets/img/home/smoke.png),
+                        url('./assets/img/glav.png');
     background-size: 70%, cover;
     background-position: bottom, top;
     overflow: hidden;
@@ -160,7 +160,7 @@ section.b-h_banner {
 }
 /* About Section */
 section.b-about {
-    background-image: url(/assets/img/home/arms.png), url(/assets/img/glav.png);
+    background-image: url(./assets/img/home/arms.png), url(./assets/img/glav.png);
     background-blend-mode: normal;
     background-size: cover, cover;
     background-position: center calc(100% + 30px), center;
@@ -175,7 +175,7 @@ section.b-about {
   margin-bottom: 0px;
 }
 .main{
-  background: url(/assets/img/glav.png) center/cover no-repeat;
+  background: url(./assets/img/glav.png) center/cover no-repeat;
   height: 100%;
   padding-top: 0px;
   padding-bottom: 150px;
@@ -233,13 +233,13 @@ section.b-about {
 .supporting{
   width: 100%;
   height: auto;
-  background: url(/assets/img/glav.png) center/cover no-repeat;
+  background: url(./assets/img/glav.png) center/cover no-repeat;
   padding-bottom: 100px;
 }
 .our-projects{
   width: 100%;
   height: 100%;
-  background: url(/assets/img/glav.png) center/cover no-repeat;
+  background: url(./assets/img/glav.png) center/cover no-repeat;
   padding-bottom: 100px;
 }
 .supporting .card-columns .card
@@ -381,7 +381,7 @@ section.b-about {
 .news{
   width: 100%;
   height: auto;
-  background: url(/assets/img/glav.png) center/cover no-repeat;
+  background: url(./assets/img/glav.png) center/cover no-repeat;
   padding-bottom: 100px;
 }
 .news  .card-columns{
@@ -399,11 +399,11 @@ section.b-about {
 .supportingg {
     width: 100%;
     height: 100%;
-    background: url(/assets/img/7th\ block.png) center/cover no-repeat;
+    background: url(./assets/img/7th\ block.png) center/cover no-repeat;
 }
 .allnews{
   width: 100%;
-  background: url(/assets/img/glav.png) center/cover no-repeat;
+  background: url(./assets/img/glav.png) center/cover no-repeat;
   height: 100%;
   padding-bottom: 100px;
 }
