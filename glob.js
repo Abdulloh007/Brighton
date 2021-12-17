@@ -20,7 +20,7 @@ let getURL = async function (url, success, error) {
 header = true,
 footer = true;
 getURL(
-    '../src/glob_elems/header.html',
+    './glob_elems/header.html',
     function (data) {
         let el = document.createElement('div');
         el.innerHTML = data;
@@ -94,7 +94,7 @@ getURL(
     }
 );
 getURL(
-    '../src/glob_elems/footer.html',
+    './glob_elems/footer.html',
     function (data) {
         let el = document.createElement('div');
         el.innerHTML = data;
