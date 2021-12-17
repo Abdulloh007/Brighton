@@ -515,6 +515,26 @@ footer#b-footer {
     .b-lang-swicher h4 {
         font-size: 30px;
     }
+    .b-f_benefit {
+        display: none;
+    }
+    .b-svg_logo {
+        width: 40%;
+        padding-right: 20px;
+    }
+    .b-fd_desc {
+        width: 60%;
+    }
+    .b-f_detatils {
+        display: flex;
+    }
+    .b-svg_logo svg {
+        width: 100%;
+    }
+    .b-fd_desc p {
+        margin: 0 0 10px;
+        text-align: right;
+    }
 }
 
 @media (max-width: 768px) { ... }

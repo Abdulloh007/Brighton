@@ -482,7 +482,7 @@ section{
   display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .contacts__title {
     font-size: 30px;
   }
